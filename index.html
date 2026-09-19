@@ -1,0 +1,98 @@
+<style>
+<!-- i just kinda went through the slides again and tried doing this i used placeholders before adding images since i felt super confused about it -->
+  
+  body {
+    background-image: url("background.gif");
+    background-repeat: repeat;
+    font-family: "Comic Sans MS";
+  }
+
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ccffff;
+    border: 3px solid #008080;
+  }
+
+  .about {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 220px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #99ffff;
+    border: 2px solid #008080;
+    z-index: 1;
+  }
+
+  .picture {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 160px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #66cccc;
+    border: 2px solid #006666;
+    z-index: 2;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #99ffff;
+    border: 2px solid #008080;
+    z-index: 3;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .star {
+    animation: spin 2s infinite;
+  }
+
+  @keyframes spin {
+    .from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+</style>
+
+
+<div class="frame">
+
+  <div class="about">
+    <h1>ABOUT ME!</h1>
+
+    <p>Hi! I'm <b>Zach</b>!</p>
+
+    <p>I like <i>art and birds.</i></p>
+
+    <pre>
+welcome :)
+hi
+haiii
+    </pre>
+  </div>
+
+
+  <div class="picture">
+    <h3>ME!</h3>
+
+    <img src="picture.jpg">
+
+    <p class="star">★</p>
+  </div>
+
+
+
+</div>
